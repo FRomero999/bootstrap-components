@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Bloque Hero -->
+
+    <section class="container-fluid w-100 vh-100 d-flex justify-content-center align-items-center bg-secondary" >
+        <h1 class="display-1">Hola Bootstrap</h1>
+    </section>
+
+    <!-- Menu de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#listas">Listas</a>
+              <a class="nav-link" href="#botones">Botones</a>
+              <a class="nav-link" href="#tarjetas">Tarjetas</a>
+              <a class="nav-link" href="#tablas">Tablas</a>
+
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Listas -->
+    <section  id="listas" class="container w-100 min-vh-100 d-flex justify-content-center flex-column align-items-center" >
+        <h1 class="display-1">Listas</h1>
+
+        <div class="row w-100">
+            <ul class="list-group col">
+                <li class="list-group-item">Item de lista n01</li>
+                <li class="list-group-item active">Item de lista n02</li>
+                <li class="list-group-item d-flex justify-content-between">
+                    Item de lista n03
+                    <span class="badge bg-primary rounded-pill">new</span>
+                </li>
+                <li class="list-group-item">Item de lista n04</li>
+                <li class="list-group-item">Item de lista n05</li>
+                <li class="list-group-item">
+                    <h4>Item de lista n06</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente in, magni illum alias quasi architecto autem placeat quia eligendi esse nobis laborum voluptatem maxime perferendis dicta hic voluptates. Eligendi.</p>
+                    <button class="btn btn-primary">Más información</button>
+                </li>
+                <li class="list-group-item">Item de lista n07</li>
+                <li class="list-group-item">Item de lista n08</li>
+                <li class="list-group-item">Item de lista n09</li>
+                <li class="list-group-item">Item de lista n10</li>
+            </ul>       
+            <div class="list-group col">
+                <button class="list-group-item">Boton 01</button>
+                <button class="list-group-item">Boton 02</button>
+                <button class="list-group-item bg-warning">Boton 03</button>
+                <button class="list-group-item bg-secondary">Boton 04</button>
+                <button class="list-group-item bg-primary">Boton 05</button>
+                <button class="list-group-item">Boton 06</button>
+                <button class="list-group-item">Boton 07</button>
+                <button class="list-group-item">Boton 08</button>
+                <button class="list-group-item">Boton 09</button>
+                <button class="list-group-item">Boton 10</button>
+            </div>    
+            <div class="list-group col">
+                <a href="#" class="list-group-item list-group-item-action">Enlace 01</a>
+                <a href="#" class="list-group-item list-group-item-action">Enlace 02</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Enlace 03</a>
+                <div class="list-group-item list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Enlace 04</a>
+                    <a href="#" class="list-group-item list-group-item-action">Enlace 05</a>
+                    <a href="#" class="list-group-item list-group-item-action">Enlace 06</a>
+                    <a href="#" class="list-group-item list-group-item-action">Enlace 07</a>
+                    <a href="#" class="list-group-item list-group-item-action">Enlace 08</a>
+                </div>
+                <a href="#" class="list-group-item list-group-item-action">Enlace 09</a>
+                <a href="#" class="list-group-item list-group-item-action">Enlace 10</a>
+            </div>  
+        </div>
+ 
+    </section>   
+
+
+    <!-- Botones -->
+
+    <section id="botones" class="container w-100 min-vh-100 d-flex flex-column justify-content-center align-items-center gap-4" >
+        <h1 class="display-1">Botones y enlaces</h1>
+        <div>
+            <button class="btn btn-primary">Boton primario</button>
+            <button class="btn btn-secondary">Boton secundario</button>
+            <button class="btn btn-warning">Boton warning</button>
+
+            <a class="btn btn-outline-danger btn-sm">Enlace outline pequeño</a>
+            <a class="btn btn-outline-info btn-lg">Enlace outline grande</a>
+            <a class="btn btn-outline-success btn-md">Enlace outline mediano</a>
+
+        </div>
+    </section>
+
+
+    <!-- Tarjetas -->
+
+    <section id="tarjetas" class="container w-100 min-vh-100 d-flex flex-column justify-content-center align-items-center gap-4" >
+        <h1 class="display-1">Tarjetas con imágenes y contenido</h1>
+        <div class="row gap-5">
+            <div class="card col p-1" >
+                <img src="https://picsum.photos/300/100" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Titulo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quibusdam natus exercitationem labore alias aperiam itaque rem quis porro quidem illo cumque. Provident modi facilis necessitatibus, temporibus voluptatibus cupiditate mollitia.</p>
+                    <a href="#" class="btn btn-primary">Botón</a>
+                </div>
+            </div>
+            <div class="card col p-1" >
+                <img src="https://picsum.photos/300/200" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Titulo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quibusdam natus exercitationem labore alias aperiam itaque rem quis porro quidem illo cumque. Provident modi facilis necessitatibus, temporibus voluptatibus cupiditate mollitia.</p>
+                    <a href="#" class="btn btn-primary">Botón</a>
+                </div>
+            </div>
+            <div class="card col p-1" >
+                <img src="https://picsum.photos/300/300" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Titulo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quibusdam natus exercitationem labore alias aperiam itaque rem quis porro quidem illo cumque. Provident modi facilis necessitatibus, temporibus voluptatibus cupiditate mollitia.</p>
+                    <a href="#" class="btn btn-primary">Botón</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tablas -->
+
+    <section id="tablas" class="container w-100 min-vh-100 d-flex flex-column justify-content-center align-items-center gap-4" >
+        <h1 class="display-1">Tablas</h1>
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Características</th>
+                    <th>Ejemplos</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Producto 1</td>
+                    <td>Descripción del producto 1</td>
+                    <td>Características del producto 1</td>
+                    <td>Ejemplos del producto 1</td>
+                    <td><button class="btn btn-primary">Botón</button></td>
+                </tr>
+                <tr>
+                    <td>Producto 2</td>
+                    <td>Descripción del producto 2</td>
+                    <td>Características del producto 2</td>
+                    <td>Ejemplos del producto 2</td>
+                    <td><button class="btn btn-primary">Botón</button></td>
+                </tr>
+                <tr>
+                    <td>Producto 11</td>
+                    <td>Descripción del producto 11</td>
+                    <td>Características del producto 11</td>
+                    <td>Ejemplos del producto 11</td>
+                    <td><button class="btn btn-primary">Botón</button></td>
+                </tr>
+                <tr>
+                    <td>Producto 12</td>
+                    <td>Descripción del producto 12</td>
+                    <td>Características del producto 12</td>
+                    <td>Ejemplos del producto 12</td>
+                    <td><button class="btn btn-primary">Botón</button></td>
+                </tr>
+                <tr>
+                    <td>Producto 13</td>
+                    <td>Descripción del producto 13</td>
+                    <td>Características del producto 13</td>
+                    <td>Ejemplos del producto 13</td>
+                    <td><button class="btn btn-primary">Botón</button></td>
+                </tr>
+                <tr>
+                    <td>Producto 14</td>
+                    <td>Descripción del producto 14</td>
+                    <td>Características del producto 14</td>
+                    <td>Ejemplos del producto 14</td>
+                    <td><button class="btn btn-primary">Botón</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Modales -->
+
+    <section id="modales" class="container w-100 min-vh-100 d-flex flex-column justify-content-center align-items-center gap-4" >
+        <h1 class="display-1">Cuadros modales</h1>
+        <button class="btn btn-lg btn-primary p-5" data-bs-toggle="modal" data-bs-target="#modal">Abrir modal</button>
+        <button class="btn btn-lg btn-secondary p-5" id="open" >Abrir modal con javascript</button>
+       
+        <div class="modal" id="modal" data-bs-backdrop="static" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Titulo</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium libero impedit quo nemo? Ducimus, est nisi, esse quo necessitatibus accusamus, itaque molestiae vel quibusdam a earum libero eaque nostrum excepturi.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        var modal = bootstrap.Modal.getOrCreateInstance( document.querySelector('#modal') );
+        document.querySelector("button#open").addEventListener("click",(ev)=>{
+            ev.preventDefault();
+            modal.show();
+        });
+    </script>
+</body>
+</html>
